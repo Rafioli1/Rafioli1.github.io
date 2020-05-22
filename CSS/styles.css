@@ -1,0 +1,71 @@
+body {
+  text-align: center;
+  background-color: #ece1ee;
+}
+h1 {
+  color: #0c0000;
+  text-decoration: underline;
+}
+h2 {
+  color: #e0435e;
+}
+p {
+  color: #9f80a7;
+  text-align: right;
+}
+.testButton {
+}
+.allContent{ 
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  color: #43061e;
+}
+.radio{
+  text-align: left;
+  margin-left: 48%;
+}
+.checkbox{
+  text-align: left;
+  margin-left: 48%;
+}
+form .likert {
+  list-style:none;
+  width:100%;
+  margin:0;
+  padding:0 0 35px;
+  display:block;
+  border-bottom:2px solid #efefef;
+}
+form .likert:last-of-type {border-bottom:0;}
+form .likert:before {
+  content: '';
+  position:relative;
+  top:11px;
+  left:9.5%;
+  display:block;
+  background-color:#efefef;
+  height:4px;
+  width:81%;
+}
+form .likert li {
+  display:inline-block;
+  width:18%;
+  text-align:center;
+  vertical-align: top;
+}
+form .likert li input[type=radio] {
+  display:block;
+  position:relative;
+  top:0;
+  left:50%;
+  margin-left:-6px;
+  
+}
+form .likert li label {width:100%;}
+form .buttons {
+  margin:35px 0;
+  padding:0 4.25%;
+  text-align:right
+} 
