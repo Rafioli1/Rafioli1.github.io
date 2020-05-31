@@ -36,10 +36,16 @@
     border-top: none;
   }
   .banner {
-    background-image: url(../assets/hero-press-inquiries.jpg);
+    background-image: url(../assets/best-credit-cards-for-groceries-810x445.jpg);
     height: 250px;
     width: 100vw;
     background-position: top;
     background-size: contain;
     /* box-shadow: 0px 0px 10px 10px #767676; */
+  }
+  .footer {
+    text-align: right;
+    color: black;
+    padding-top: 30px;
+    font-size: 12px;
   }

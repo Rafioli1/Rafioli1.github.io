@@ -3,23 +3,77 @@
 
 var products = [
 	{
-		name: "brocoli",
+		name: "strawberry ($0.99)",
 		vegetarian: true,
 		glutenFree: true,
+		organic: true,
+		price: 0.99
+	},
+	{
+		name: "banana ($1.75)",
+		vegetarian: true,
+		glutenFree: true,
+		organic: true,
+		price: 1.75
+	},
+	{
+		name: "brocoli ($1.99)",
+		vegetarian: true,
+		glutenFree: true,
+		organic: true,
 		price: 1.99
 	},
 	{
-		name: "bread",
+		name: "bread ($2.35)",
 		vegetarian: true,
 		glutenFree: false,
+		organic: true,
 		price: 2.35
 	},
 	{
-		name: "salmon",
+		name: "milk ($4.99)",
+		vegetarian: true,
+		glutenFree: true,
+		organic: true,
+		price: 4.99
+	},
+	{
+		name: "baguette ($4.99)",
+		vegetarian: true,
+		glutenFree: false,
+		organic: true,
+		price: 4.99
+	},
+	{
+		name: "salmon ($10.00)",
 		vegetarian: false,
 		glutenFree: true,
+		organic: true,
 		price: 10.00
+	},
+
+	{
+		name: "ketchup ($11.99)",
+		vegetarian: true,
+		glutenFree: false,
+		organic: false,
+		price: 11.99
+	},
+	{
+		name: "frozen meatballs ($19.99)",
+		vegetarian: false,
+		glutenFree: true,
+		organic: false,
+		price: 19.99
+	},
+	{
+		name: "steak ($29.99)",
+		vegetarian: false,
+		glutenFree: true,
+		organic: true,
+		price: 29.99
 	}
+
 ];
 	
 
@@ -30,10 +84,13 @@ var products = [
 function restrictListProducts(prods, restriction) {
 	let product_names = [];
 	for (let i=0; i<prods.length; i+=1) {
-		if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
+		 if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
 			product_names.push(prods[i].name);
 		}
 		else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
+			product_names.push(prods[i].name);
+		}
+		else if ((restriction == "Organic") && (prods[i].organic == true)){
 			product_names.push(prods[i].name);
 		}
 		else if (restriction == "None"){
