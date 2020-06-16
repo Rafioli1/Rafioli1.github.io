@@ -1,0 +1,155 @@
+<!-- This file contains many elements adapted from the online tutorial -->
+<!-- on Bootstrap 4 as found here: https://www.w3schools.com/bootstrap4/default.asp -->
+<!-- Images source: -->
+<!-- jule.jpg taken from https://www.freepik.com/premium-vector/cartoon-successful-hairdresser_3951066.htm -->
+<!-- Erwind.jpb https://www.kijiji.ca/v-construction-trades-jobs/winnipeg/bicycle-mechanic/1499188319 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- The head should contain an appropriate title for your site -->
+<head>
+    <title>Rafi's Snip Snaps</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- Your own additional style sheet -->
+    <link href="./styles/styles.css" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+
+    <!-- A different approach would be to make the whole staff information collapsible -->
+    <!-- Here a block button (taking the full width) opens/closes the collapsible -->
+    <!-- Here a single card is used, but card columns could be used -->
+
+    <!-- Collapsible with multiple items - accordion -->
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp -->
+    <!-- As we want to do a vertical navigation better suited for mobile design, an accordion pattern -->
+    <!-- could work well.  You can use other patterns too.  This is just an example. -->
+
+
+  <!--Code retrieved from https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp -->
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1 style="font-size:50px">Rafi's Snip Snaps</h1>
+        <p> 161 Louis-Pasteur Private, Ottawa, ON K1N 6N5</p>
+
+      </div>
+    </div>
+<h3>Meet the team</h3>
+  <!--Code retrieved from https://www.w3schools.com/howto/howto_css_hero_image.asp -->
+  <!--Accordion wrapper-->
+  <nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Rafi Biouss (Owner)</a>
+      <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Jenny Postnov (Stylist)</a>
+      <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">John Doe (Colour Specialist)</a>
+    </div>
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"><p class="">Rafi has been taking care of the business longer than he can remember. Cutting hair is in his blood.</p>
+        <p class="mb-0">Rafi can Style, Cut, and Colour. </p></div>
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"><p class="">You'll never get your hair curled the way Jenny does it. Been with Snip Snaps since the very beginning.</p>
+        <p class="mb-0">Jenny can Style and Cut.</p></div>
+    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">            <p class="">John is our new hire and hes absolutely fantastic with colouring, if your looking to dye johns your guy.</p>
+        <p class="mb-0">John can Colour.</p></div>
+  </div>
+<br>
+<!--Accordion wrapper-->
+<h3>Services</h3>
+  <!--Code retrieved from https://www.w3schools.com/howto/howto_css_hero_image.asp -->
+  <!--Accordion wrapper-->
+  <nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <a class="nav-item nav-link active" id="nav-style-tab" data-toggle="tab" href="#nav-style" role="tab" aria-controls="nav-style" aria-selected="true">Styling</a>
+      <a class="nav-item nav-link" id="nav-hair-tab" data-toggle="tab" href="#nav-hair" role="tab" aria-controls="nav-hair" aria-selected="false">Hair Cut</a>
+      <a class="nav-item nav-link" id="nav-colour-tab" data-toggle="tab" href="#nav-colour" role="tab" aria-controls="nav-colour" aria-selected="false">Colouring</a>
+    </div>
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-style" role="tabpanel" aria-labelledby="nav-style-tab">The price comes out to (10$-50$) depending on chosen Style</div>
+    <div class="tab-pane fade" id="nav-hair" role="tabpanel" aria-labelledby="nav-hair-tab">The price comes out to (30$-100$) depending on length of the Hair</div>
+    <div class="tab-pane fade" id="nav-colour" role="tabpanel" aria-labelledby="nav-colour-tab">The price comes out to (80$-140$) depending on Colour</div>
+  </div>
+
+    <h3>Book an appointment</h3>
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Choose a service</a>
+    
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"><p>Please specify which service you would like to book</p>
+			<label>
+				<input type="radio" name="service" value="haircut">
+  				<img src="./images/2018_MG_0682 BW.jpg" width="350" height="350">
+          <p> Styling</p>
+			</label>
+			<label>
+		  		<input type="radio" name="service" value="highlight">
+  				<img src="./images/mens-beard-fade-500x500.jpg"width="350" height="350">
+          <p> Hair Cuts</p>
+			</label>
+			<label>
+		  		<input type="radio" name="service" value="foils">
+  				<img src="./images/c97f37329e85ce902c29b0a461c066e6.jpg"width="350" height="350">
+          <p> Colouring</p>
+			</label></div>
+      </div>
+        
+            <div class="card">
+                <div class="card-header">
+                  <h5 class="text-uppercase mb-0 py-1"
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseDate">Choose an appointment time</a>
+                  </h5>
+                </div>
+                <div id="collapseDate" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Please specify which time works best for you</p>
+                        <!-- Bootstrap has various input components. Some examples are given here: -->
+                        <!-- Component shown here: https://v4-alpha.getbootstrap.com/components/forms/#textual-inputs -->
+                        <div class="form-group row">
+                            <label for="dateTimeInput" class="col-2 col-form-label">MM/DD/YYYY hh:mm</label>
+                            <div class="col-10">
+                                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="dateTimeInput">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                  <h5 class="text-uppercase mb-0 py-1"
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo">Your info</a>
+                  </h5>
+                </div>
+                <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Please leave us with your information.</p>
+			Full name: <input type="text" id="fname" name="fname" placeholder="First name"> <input type="text" id="lname" name="lname" placeholder="Last name"><br><br>
+                        Phone number: <input type="tel" id="phone" name="phone" placeholder="(541) 754-3010" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+			Email address: <input type="text" id="email" name="email" placeholder="vanilla.ice@email.com"><br><br>
+			<button type="button" class="btn btn-success">Book appointment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+	<br><br><br>
+	<footer>
+        <p>This beautiful website was done by Rafi Biouss</p>
+    </footer>
+  		
+	</div>
+</body>
+</html>
+
