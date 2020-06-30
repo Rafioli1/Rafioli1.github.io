@@ -1,1 +1,1 @@
-[{"where":"Google","count":1},{"where":"Facebook","count":1},{"where":"MySpace","count":1},{"where":"Tinder","count":1}]
+[{"where":"Google","count":1},{"where":"Facebook","count":1},{"where":"MySpace","count":1},{"where":"Tinder","count":1},{"where":["MySpace","Tinder","Bumble"],"count":1}]
